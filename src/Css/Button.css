@@ -1,0 +1,12 @@
+.Fasho {
+  width: 150px;
+  height: 50px;
+  color: white;
+  background-color: whitesmoke;
+  border: none;
+  cursor: pointer;
+
+  img {
+    width: 120px;
+  }
+}
