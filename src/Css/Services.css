@@ -1,0 +1,13 @@
+.Services_charity_mainContainer {
+    width: 100%;
+}
+.Charity_Contaier_imag {
+    width: 100%;
+    height: 80vh;
+    background-image: url("/src/assets/Charity.png");
+    background-position-y: center;
+    /* background-position-y: center; */
+    background-position: calc();
+    background-size: cover;
+    background-repeat: no-repeat;
+}
