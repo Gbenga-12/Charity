@@ -9,8 +9,6 @@
     background-color: #f7f5f2;
   }
   
-  /* Main Container */
-  
   .projects-page {
     width: 100%;
     min-height: 100vh;
@@ -18,9 +16,6 @@
     gap: 40px;
     padding: 40px 60px;
   }
-  
-  /* ================= SIDEBAR ================= */
-  
   .sidebar {
     width: 260px;
     border-right: 1px solid #cfcfcf;
@@ -40,8 +35,6 @@
     margin-bottom: 20px;
   }
   
-  /* Sidebar Buttons */
-  
   .filter-section button {
     width: 100%;
     padding: 16px;
@@ -58,7 +51,7 @@
   }
   
   .filter-section .active {
-    background: #3b82f6;
+    background: blue;
     color: white;
   }
   
@@ -68,9 +61,6 @@
     background: #d0d0d0;
     margin: 45px 0;
   }
-  
-  /* ================= CONTENT ================= */
-  
   .content {
     flex: 1;
   }
@@ -82,9 +72,6 @@
     letter-spacing: 1px;
     margin-bottom: 30px;
   }
-  
-  /* ================= PROJECT CARD ================= */
-  
   .project-card {
     width: 100%;
     display: flex;
@@ -109,8 +96,6 @@
     height: 240px;
     object-fit: cover;
   }
-  
-  /* Project Info */
   
   .project-info {
     padding: 25px;
