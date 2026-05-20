@@ -4,6 +4,7 @@ import Headerimg from "../assets/HeaderImg.png";
 import Arrow from "../assets/arrow.png";
 import Button from "../components/Button";
 import Donate from "../assets/Donate button.png";
+import { FiAlignJustify } from "react-icons/fi";
 
 const Header = () => {
   const [show, setShow] = React.useState(false);
@@ -53,6 +54,7 @@ const Header = () => {
           <Button img={<img src={Donate} alt="Donate" />} />
           <button className="Fasho">Sign Up</button>
         </article>
+        <FiAlignJustify className="Ham" />
       </section>
     </div>
   );
