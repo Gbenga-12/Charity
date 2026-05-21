@@ -5,7 +5,7 @@ import Arrow from "../assets/arrow.png";
 import Button from "../components/Button";
 import Donate from "../assets/Donate button.png";
 import { FiAlignJustify } from "react-icons/fi";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   const [show, setShow] = React.useState(false);
   const [show1, setShow1] = React.useState(false);
@@ -17,32 +17,37 @@ const Header = () => {
         </article>
         <article className="Header_Text">
           <ul>
-            <li>Home</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
             <li>About</li>
             <li>
-              <button onMouseEnter={() => setShow(true)} className="Clemp">
+              <Link
+                to="/services"
+                onClick={() => setShow(true)}
+                className="Clemp"
+              >
                 Our Service
                 <img src={Arrow} alt="arrow image" />
-              </button>
+              </Link>
             </li>
             {show && (
-              <ul
-                className="Header_Submenu"
-                onMouseLeave={() => setShow(false)}
-              >
-                <li>Water Projects</li>
+              <ul className="Header_Submenu" onClick={() => setShow(false)}>
+                <li Link to="/">
+                  Water Projects
+                </li>
                 <li>Health</li>
                 <li>Education</li>
               </ul>
             )}
             <li>
-              <button onMouseEnter={() => setShow1(true)} className="Clemp">
+              <button onClick={() => setShow1(true)} className="Clemp">
                 Get Involved
                 <img src={Arrow} alt="arrow image" />
               </button>
             </li>
             {show1 && (
-              <ul className="Header_Subed" onMouseLeave={() => setShow1(false)}>
+              <ul className="Header_Subed" onClick={() => setShow1(false)}>
                 <li>Volunteer</li>
                 <li>Start Fundraiser</li>
                 <li>Partner with Us</li>

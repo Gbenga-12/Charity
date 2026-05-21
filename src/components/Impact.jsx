@@ -33,18 +33,18 @@ const Impact = () => {
     },
   ];
   const containerref = useRef(null);
-  const goLeft = () => {
-    containerref.current.scrollBy({
-      left: -300,
-      behavior: "smooth",
-    });
-  };
-  const goRight = () => {
-    containerref.current.scrollBy({
-      left: 300,
-      behavior: "smooth",
-    });
-  };
+  // const goLeft = () => {
+  //   containerref.current.scrollBy({
+  //     left: -300,
+  //     behavior: "smooth",
+  //   });
+  // };
+  // const goRight = () => {
+  //   containerref.current.scrollBy({
+  //     left: 300,
+  //     behavior: "smooth",
+  //   });
+  // };
 
   return (
     <div className="Impact_con">
