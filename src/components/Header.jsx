@@ -4,10 +4,12 @@ import Headerimg from "../assets/HeaderImg.png";
 import Arrow from "../assets/arrow.png";
 import Button from "../components/Button";
 import Donate from "../assets/Donate button.png";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [show, setShow] = React.useState(false);
   const [show1, setShow1] = React.useState(false);
+  const nav = useNavigate();
   return (
     <div className="Header">
       <section className="Header_sec">
@@ -16,10 +18,10 @@ const Header = () => {
         </article>
         <article className="Header_Text">
           <ul>
-            <li>Home</li>
+            <li onClick={() => nav('/')}>Home</li>
             <li>About</li>
             <li>
-              <button onMouseEnter={() => setShow(true)} className="Clemp">
+              <button onMouseEnter={() => setShow(true)} className="Clemp" onClick={() => nav("/services")}>
                 Our Service
                 <img src={Arrow} alt="arrow image" />
               </button>
