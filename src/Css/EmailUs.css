@@ -1,0 +1,45 @@
+.EmailUs_con {
+  width: 100%;
+  height: 30vh;
+  background-color: #007888;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  font-size: 14px;
+  text-align: center;
+  color: #ffff;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.Emailin {
+  width: 60%;
+  height: 30%;
+  display: flex;
+
+  align-items: center;
+
+  input {
+    width: 50%;
+    height: 90%;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  button {
+    width: 45%;
+    height: 90%;
+    padding: 10px;
+    border: none;
+    background-color: #4b83bf;
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
