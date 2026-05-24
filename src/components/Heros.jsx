@@ -53,7 +53,7 @@ const Heros = () => {
                     </div>
 
                     <div className='hero_section_cards_card_text'>
-                        <h6>{card.title}</h6>
+                        <h2>{card.title}</h2>
                         <div>
                         <p>{card.description}</p>
                             <Button  className="hero_section_cards_card_button" text={card.buttonText}/>

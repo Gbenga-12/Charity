@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Css/Corporatepartners.css'
-// import image from '../assets/image.png'
+import subhero from '../assets/subhero.png'
 
 const Corporatepartners = () => {
   return (
@@ -12,7 +12,7 @@ const Corporatepartners = () => {
         </div>
       {/* <hr /> */}
         <div className='corporate-partners-article-image'>
-            {/* <img src={image} alt=''/> */}
+            <img src={subhero} alt=''/>
         </div>
     </article>
     </section>
