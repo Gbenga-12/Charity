@@ -34,7 +34,7 @@ const Footer = () => {
               <li>Responsible Disclosure Process</li>
               <li>100% Model</li>
               <li>
-                <img src={Frame} alt="Frame" />
+                <img src={Frame} alt="Frame" className="Frame" />
               </li>
             </ul>
           </div>
@@ -54,7 +54,7 @@ const Footer = () => {
         </article>
       </section>
       <section className="Thirty">
-        <h2>
+        <h2 className="Bop">
           © 2026 | charity: water Donation Processing Center, 230 Franklin Rd.,
           Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th
           Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501
@@ -62,6 +62,10 @@ const Footer = () => {
           RSIN 826151656. Charity Global UK Limited is a dual-qualified charity
           registered in England and Wales, charity number 1169228. Charity
           Global UK Limited is wholly owned by Charity Global,Inc.
+        </h2>
+        <h2 className="Dem">
+          © 2026 | charity: water Donation Processing Center, 230 Franklin Rd.,
+          Ste. 11-II, Franklin, TN 37064
         </h2>
         <img src={Dollar} alt="Dollar" />
       </section>
