@@ -48,7 +48,10 @@ const Header = () => {
             </li>
             {show1 && (
               <ul className="Header_Subed" onClick={() => setShow1(false)}>
-                <li>Volunteer</li>
+                <Link to="/volunteer">
+                  {" "}
+                  <li>Volunteer</li>
+                </Link>
                 <li>Start Fundraiser</li>
                 <li>Partner with Us</li>
               </ul>
