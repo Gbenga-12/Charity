@@ -5,12 +5,29 @@
   display: flex;
   justify-content: center;
   border-bottom: 2px solid #000000cc;
+  font-family: "Inter", sans-serif;
+
+  @media (max-width: 600px) {
+    display: block;
+    height: 10vh;
+  }
+}
+
+.Ham {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  @media (max-width: 600px) {
+    display: block;
+    width: 30%;
+    height: 30%;
+  }
 }
 
 .Header_sec {
   width: 95%;
   height: 100%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +61,10 @@
         font-weight: 500;
         cursor: pointer;
       }
+    }
+
+    @media (max-width: 600px) {
+      display: none;
     }
   }
 
@@ -111,6 +132,16 @@
     img {
       width: 120px;
     }
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.Header_Img {
+  @media (max-width: 600px) {
+    padding-left: 3%;
   }
 }
 

@@ -3,7 +3,7 @@ import Educationdetails from "./Education details";
 const Education = () => {
     return (
       <div>
-        {/* <Education /> */}
+         <Education /> 
         <Educationdetails />
       </div>
     );
