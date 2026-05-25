@@ -4,7 +4,7 @@ import "../Css/Button.css";
 const Button = (props) => {
   return (
     <div>
-      <button className={props.className ? props.className : "Fasho"}>
+      <button className={props.className || "Fasho"}>
         {props.text}
         {props.img}
       </button>
