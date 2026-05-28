@@ -6,34 +6,55 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 600px) {
+    height: 240vh;
+
+    justify-content: end;
+    align-items: center;
+  }
 }
 
 .Seventy {
   width: 95%;
-  height: 75%;
+  height: 85%;
+  display: flex;
+  align-items: end;
 
-  .Footer_Logo {
-    width: 100%;
-    height: 15%;
+  @media (max-width: 600px) {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    height: 62%;
 
-    .Donate {
-      width: 150px;
-      height: 60px;
-    }
+    justify-content: start;
+    align-items: start;
   }
 
-  .Footer_Text {
-    width: 100%;
-    height: 85%;
+  .Footer_Logo {
+    width: 70%;
+    height: 90%;
     display: flex;
+    background-color: #222520;
+    flex-direction: column;
 
-    align-items: center;
+    @media (max-width: 600px) {
+      width: 80%;
+      height: 100%;
+      gap: 5%;
+    }
+
+    .Blod {
+      width: 30%;
+      height: 10%;
+
+      @media (max-width: 600px) {
+        width: 90%;
+        height: 6%;
+      }
+    }
 
     .Footer_Text1 {
-      width: 65%;
+      width: 90%;
       height: 90%;
       background-color: #222520;
       display: flex;
@@ -41,6 +62,7 @@
       align-items: center;
 
       ul {
+        width: 90%;
         height: 80%;
         list-style: none;
         display: flex;
@@ -48,22 +70,88 @@
         justify-content: space-around;
         color: #ffffff;
         font-size: 1.2rem;
+
+        @media (max-width: 600px) {
+          justify-content: start;
+          height: 20%;
+          gap: 15%;
+          padding-bottom: 10%;
+        }
+      }
+
+      @media (max-width: 600px) {
+        flex-direction: column;
+        height: 100%;
+
+        .Frame {
+          width: 100%;
+        }
       }
     }
-    .Footer_Text2 {
-      width: 35%;
+  }
+}
+
+.Footer_Text {
+  width: 30%;
+  height: 90%;
+  display: flex;
+
+  @media (max-width: 600px) {
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  align-items: center;
+  .Donate {
+    width: 150px;
+    height: 60px;
+  }
+
+  .Footer_Text2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: #ffffff;
+
+    @media (max-width: 600px) {
+      height: 80%;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: start;
+    }
+
+    .Footer_Text3 {
+      width: 100%;
       height: 90%;
-      background-color: #222520;
+      justify-content: center;
+      align-items: start;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      padding-left: 40px;
-      gap: 30px;
-      color: #ffffff;
 
       h2 {
         font-size: 2rem;
         font-weight: 500;
+        @media (max-width: 600px) {
+          padding-bottom: 10px;
+          font-size: 1.6rem;
+        }
+      }
+
+      img {
+        padding-top: 10%;
+        @media (max-width: 600px) {
+          display: none;
+        }
+      }
+
+      @media (max-width: 600px) {
+        display: flex;
       }
     }
   }
@@ -79,13 +167,35 @@
   color: whitesmoke;
   font-weight: 200;
 
-  h2 {
+  .Bop {
     width: 85%;
     font-size: 1.05rem;
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+  .Dem {
+    display: none;
+    @media (max-width: 600px) {
+      display: flex;
+    }
   }
 
   img {
     width: 15%;
     height: 20%;
+  }
+
+  @media (max-width: 600px) {
+    height: 4%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 10px;
+
+    img {
+      width: 65%;
+      height: 30%;
+    }
   }
 }

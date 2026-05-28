@@ -19,6 +19,8 @@ const Fundraiser = () => {
       </section>
     </main>
   );
+const Fundraiser = () => {
+  return <div></div>;
 };
 
 export default Fundraiser;

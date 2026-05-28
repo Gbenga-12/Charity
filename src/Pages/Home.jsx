@@ -1,14 +1,21 @@
-import React from "react";
 import Header from "../components/Header";
-import Services from "../components/Services";
-import Projects from "../components/Projects";
+import Herosec from "../components/Herosec";
+import Impact from "../components/Impact";
+import Programs from "../components/Programs";
+import Latest from "../components/Latest";
+import EmailUs from "../components/EmailUs";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <Services />
-      <Projects />
+      <Herosec />
+      <Impact />
+      <Programs />
+      <Latest />
+      <EmailUs />
+      <Footer />
     </div>
   );
 };
