@@ -1,21 +1,14 @@
 import React from "react";
 import "../Css/Funds.css";
 // import glass from "../assets/glass.png";
-import vol from "../assets/vol.png";
 
-const Funds = ({ text, subText, image }) => {
-    const dataProps = {
-     text: text,
-     subText: subText,
-     image: image,
-    };
-
+const Funds = ({ title, image }) => {
   return (
     <div className="fundraiser-container">
       <div className="fundraiser-form-section">
         <p className="quick-start">Quick Start</p>
 
-        <h1> Volunteer</h1>
+        <h3>{title}</h3>
 
         <div className="line"></div>
 
@@ -49,9 +42,8 @@ const Funds = ({ text, subText, image }) => {
         </form>
       </div>
 
-     
       <div className="fundraiser-image-section">
-        <img src={vol} alt="fundraiser"/>
+        <img src={image} alt="fundraiser" />
       </div>
     </div>
   );
