@@ -1,7 +1,6 @@
 import "../Css/Projects.css";
 
 const Projects = () => {
-  cons
   const projects = [
     {
       id: 1,

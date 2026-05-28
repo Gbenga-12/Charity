@@ -8,8 +8,6 @@ const Services = () => {
     <div>
       <Header />
       <Service />
-      <Projects />
-      <Footer />
     </div>
   );
 };
