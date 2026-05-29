@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Educationdetails from "./Education details";
 import Educationpage from "./Educationpage";
 
@@ -6,6 +7,7 @@ const Education = () => {
     <div>
       <Educationpage />
       <Educationdetails />
+      <Footer />
     </div>
   );
 };
