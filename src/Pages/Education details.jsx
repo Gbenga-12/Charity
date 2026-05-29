@@ -1,41 +1,35 @@
-import React from 'react'
-import "../Css/Education details.css"
+import React from "react";
+import "../Css/Education details.css";
 // import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
-
+import girl from "../assets/Student.pics.png";
+import students from "../assets/students charity.png"
+import Student  from "../assets/Charity _watter_student.png"
 // const navigate = useNavigate();
 
-const  Educationdetails= () => {
- const  Educationdetails= [
+const Educationdetails = () => {
+  const Educationdetails = [
     {
       id: 1,
       title: "School Is Just The Beginning",
       subtitle: "How does having clean water at home impact school attendance?",
-      image:
-        "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b",
-      text:"Collecting dirty water takes time! When families have access to clean water close to home, kids can focus on more important things, like going to school, studying, and enjoying their childhood."
+      image: girl,
+      text: "Collecting dirty water takes time! When families have access to clean water close to home, kids can focus on more important things, like going to school, studying, and enjoying their childhood.",
     },
     {
       id: 2,
       title: "Until no one dies from dirty water",
-      subtitle: "Why is it important to have safe water and adequate facilities at school?",
-      image:
-        "https://images.unsplash.com/photo-1509099836639-18ba1795216d",
-      text:"Clean water stations give kids a place to wash their hands. Proper latrines provide privacy for young girls. These facilities ensure that kids who become healthy, continue to stay healthy."
-
-
+      subtitle:"Why is it important to have safe water and adequate facilities at school?",
+      image:students,
+      text: "Clean water stations give kids a place to wash their hands. Proper latrines provide privacy for young girls. These facilities ensure that kids who become healthy, continue to stay healthy.",
     },
     {
       id: 3,
       title: "bring clean water and better futures",
       subtitle: "Why is education important for kids in rural communities?",
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
-      text: "Attending school gives kids a chance to expand their knowledge and pursue new opportunities. It provides a chance to become doctors, engineers, and social workers. It promotes stronger futures." 
-
-
-
- }
+      image: Student,
+      text: "Attending school gives kids a chance to expand their knowledge and pursue new opportunities. It provides a chance to become doctors, engineers, and social workers. It promotes stronger futures.",
+    },
   ];
 
   return (
@@ -48,8 +42,8 @@ const  Educationdetails= () => {
           <button>EDUCATION PROJECT</button>
           <button>Health Programs</button>
           <Link to="/education">
-  <button>Education Initiative</button>
-</Link>
+            <button>Education Initiative</button>
+          </Link>
         </div>
 
         <div className="line"></div>
@@ -80,7 +74,7 @@ const  Educationdetails= () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Educationdetails
+export default Educationdetails;

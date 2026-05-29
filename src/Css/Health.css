@@ -1,0 +1,13 @@
+.EDucation_container_img {
+    width: 100%;
+  }
+  .Image_Container {
+    width: 100%;
+    height: 80vh;
+  }
+  .childrenImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
